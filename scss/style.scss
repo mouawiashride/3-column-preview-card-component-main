@@ -1,0 +1,239 @@
+*
+{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+
+$Bright_orange: hsl(31, 77%, 52%);
+$Dark_cyan: hsl(184, 100%, 22%);
+$Very_dark_cyan: hsl(179, 100%, 13%);
+$Transparent_white_paragraphs: hsla(0, 0%, 100%, 0.75);
+$Very_light_gray: hsl(0, 0%, 95%);
+$font_family_lex: 'Lexend Deca', sans-serif;
+$font_family_Big:'Big Shoulders Display' , cursive;
+
+// padding of divs
+$mobilepadding:10px ;
+$desktoppadding:48px;;
+
+
+
+body
+{
+    background-color:$Very_light_gray ;
+    height: 100%;
+}
+
+.container 
+{
+    display: flex;
+    
+    flex-direction: column;
+    width: 80%;
+    margin: 20px auto;
+
+   h2 
+   {
+       text-transform: uppercase;
+       color:$Very_light_gray ;
+       font-family: $font_family_Big;
+       font-weight: 700;
+   }
+     
+  
+   p 
+   {
+       color: $Transparent_white_paragraphs;
+       font-weight: 400;
+       font-family: $font_family_lex;
+       line-height: 1.5;
+   }
+   a 
+   {
+       text-decoration: none;
+       background-color: $Very_light_gray;
+       
+       display: block;
+       text-align: center;
+       border-radius: 60px;
+       transition: 0.5s all ease-in-out;
+       font-weight: 400;
+       font-family: $font_family_lex;
+   }
+   .firdiv
+   {
+    background-color: $Bright_orange;
+       a 
+       {
+         color:$Bright_orange ;
+       
+       }
+   }
+   .secdiv
+   {
+    background-color: $Dark_cyan;
+    a 
+    {
+      color:$Dark_cyan ;
+    }
+   }
+   .thidiv
+   {
+    background-color: $Very_dark_cyan;
+    a 
+    {
+      color: $Very_dark_cyan;
+    }
+   }
+ 
+
+
+}
+
+@media (min-width: 200px)
+{
+    .container
+    {
+        
+       
+       
+        div 
+        {
+            width: 100%;
+            padding: 15px;
+        }
+        img {
+            margin-bottom: 5px;
+        }
+        h2 
+        {
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 15px;
+            margin-bottom: 20px;
+        }
+        a{
+            width: 148.5px;
+        }
+
+    }
+}
+
+
+
+
+
+
+@media (min-width: 375px)
+{
+    .container
+              {
+                  height: 1326.5px;
+                
+                width: 326.5px;
+                margin: 87.7px auto;
+                 
+                
+                div
+                {
+                  width: 326.5px;
+                  padding: 50px;
+                  position: relative;
+                }
+                img 
+                {
+                    margin-bottom: 41px;
+                }
+                h2 
+                {
+                    margin-bottom: 39px;
+                }
+                p 
+                {
+                    margin-bottom: 27px;
+                }
+
+              }
+
+}
+
+
+
+@media (min-width:1440px)
+{
+    .container
+    {
+        width: 918px ;
+        height: 500.2px;
+        flex-direction: row;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        margin: 0;
+        div 
+        {
+           width:calc(100%/3) ;
+           position: relative;
+        }
+        img {
+            margin-bottom: 42px;
+        }
+        h2 
+        {
+            margin-bottom: 50px;
+        }
+        p
+        {
+            margin-bottom: 52px;
+        }
+      
+            .firdiv
+            {
+        
+               padding: $desktoppadding;
+            }
+            .secdiv
+            {
+               
+                padding: $desktoppadding;
+            }
+            .thidiv
+            {
+             
+                padding: $desktoppadding;
+            }
+            a 
+            {
+                padding: 18.5px 0;
+                position: absolute;
+                bottom: 48px;
+                left: 48px;
+            }
+        
+    }
+}
+
+
+
+
+
+// style event 
+.container 
+{
+    a:hover 
+    {
+            background-color: transparent;
+            border: solid 1px $Very_light_gray;
+            color: $Very_light_gray;
+            
+        
+    }
+}

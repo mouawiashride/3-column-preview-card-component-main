@@ -1,0 +1,113 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box; }
+
+html {
+  height: 100%; }
+
+body {
+  background-color: #f2f2f2;
+  height: 100%; }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 20px auto; }
+  .container h2 {
+    text-transform: uppercase;
+    color: #f2f2f2;
+    font-family: "Big Shoulders Display", cursive;
+    font-weight: 700; }
+  .container p {
+    color: rgba(255, 255, 255, 0.75);
+    font-weight: 400;
+    font-family: "Lexend Deca", sans-serif;
+    line-height: 1.5; }
+  .container a {
+    text-decoration: none;
+    background-color: #f2f2f2;
+    display: block;
+    text-align: center;
+    border-radius: 60px;
+    transition: 0.5s all ease-in-out;
+    font-weight: 400;
+    font-family: "Lexend Deca", sans-serif; }
+  .container .firdiv {
+    background-color: #e38826; }
+    .container .firdiv a {
+      color: #e38826; }
+  .container .secdiv {
+    background-color: #006970; }
+    .container .secdiv a {
+      color: #006970; }
+  .container .thidiv {
+    background-color: #004241; }
+    .container .thidiv a {
+      color: #004241; }
+
+@media (min-width: 200px) {
+  .container div {
+    width: 100%;
+    padding: 15px; }
+  .container img {
+    margin-bottom: 5px; }
+  .container h2 {
+    margin-bottom: 10px; }
+  .container p {
+    font-size: 15px;
+    margin-bottom: 20px; }
+  .container a {
+    width: 148.5px; } }
+@media (min-width: 375px) {
+  .container {
+    height: 1326.5px;
+    width: 326.5px;
+    margin: 87.7px auto; }
+    .container div {
+      width: 326.5px;
+      padding: 50px;
+      position: relative; }
+    .container img {
+      margin-bottom: 41px; }
+    .container h2 {
+      margin-bottom: 39px; }
+    .container p {
+      margin-bottom: 27px; } }
+@media (min-width: 1440px) {
+  .container {
+    width: 918px;
+    height: 500.2px;
+    flex-direction: row;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0; }
+    .container div {
+      width: calc(100%/3);
+      position: relative; }
+    .container img {
+      margin-bottom: 42px; }
+    .container h2 {
+      margin-bottom: 50px; }
+    .container p {
+      margin-bottom: 52px; }
+    .container .firdiv {
+      padding: 48px; }
+    .container .secdiv {
+      padding: 48px; }
+    .container .thidiv {
+      padding: 48px; }
+    .container a {
+      padding: 18.5px 0;
+      position: absolute;
+      bottom: 48px;
+      left: 48px; } }
+.container a:hover {
+  background-color: transparent;
+  border: solid 1px #f2f2f2;
+  color: #f2f2f2; }
+
+/*# sourceMappingURL=style.css.map */
