@@ -74,7 +74,9 @@ body {
     .container h2 {
       margin-bottom: 39px; }
     .container p {
-      margin-bottom: 27px; } }
+      margin-bottom: 27px; }
+    .container a {
+      padding: 20px; } }
 @media (min-width: 1440px) {
   .container {
     width: 918px;
